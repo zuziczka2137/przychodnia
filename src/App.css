@@ -1,0 +1,315 @@
+* {
+  margin: 0; 
+  padding: 0; 
+  font-family:Helvetica, Arial, sans-serif;
+  box-sizing: border-box;
+}
+body {
+background-image: url('tło.jpg');
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+}
+#main {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: white;
+}
+
+header img {
+  width: 100%;
+  display: block;
+}
+
+nav {
+  background-color: brown;
+}
+
+a.menu{
+  display: inline-block;
+  width: 20%;
+  padding: 15px 30px;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+}
+
+a.konto{
+  display: inline-block;
+  width: 33%;
+  padding: 15px 30px;
+  color: black;
+  text-decoration: none;
+  text-align: center;
+}
+
+a.konto:hover{
+  background-color: chocolate;
+}
+
+a.menu:hover {
+  background-color: green;
+}
+
+.active {
+  background-color: green;
+}
+
+article {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding: 0 20px;
+}
+
+article h1 {
+  font-size: 30px;
+  text-align: center;
+  margin: 0 15% 20px 15%;
+  padding-bottom: 15px;
+  border-bottom: 2px solid brown;
+}
+
+img.left {
+  float:left;
+  padding: 15px;
+  width:30%;
+
+}
+img.right {
+  float:left;
+  padding: 15px;
+  width:50%;
+
+}
+img.pic {
+  text-align: center;
+  padding: 3px;
+  width:35%;
+}
+
+article p {
+  text-align: justify;
+  line-height: 25px;
+  font-size: 20px;
+  padding: 25px 0;
+}
+
+article p1 {
+  text-align: justify;
+  line-height: 25px;
+  font-size: 20px;
+  padding: 2px 0;
+}
+
+.column {
+  float: left;
+  }
+  .left {
+  width: 25%;
+  }
+
+  .middle {
+  width: 25%;
+  }
+  
+  .right {
+  width: 50%;
+  }
+
+  .left1{
+      width: 33%;
+  }
+
+  .middle1{
+      width: 33%;
+  }
+
+  .right1{
+      width: 33%;
+  }
+
+  .row:after {
+  content: "";
+  display: table;
+  clear: both;
+  }
+
+img.lekarz{
+  width: 250px;
+  height: 350px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+p.lekarz{
+  text-align: center;
+  line-height: 25px;
+  font-size: 15px;
+  padding: 25px 0;
+}
+
+img.info{
+  width: 200px;
+  height: 150px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+p.pytanie {
+  text-align: center;
+  line-height: 25px;
+  font-size: 22px;
+  padding: 25px 0;
+  font-weight: bold;
+}
+
+.carousel {
+  position: relative;
+  box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
+  margin-top: 26px;
+}
+
+.carousel-inner {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.carousel-open:checked + .carousel-item {
+  position: static;
+  opacity: 100;
+}
+
+.carousel-item {
+  position: absolute;
+  opacity: 0;
+  -webkit-transition: opacity 0.6s ease-out;
+  transition: opacity 0.6s ease-out;
+}
+
+.carousel-item img {
+  display: block;
+  height: 540px;
+  max-width: 1200px;
+}
+
+.carousel-control {
+  background: rgba(0, 0, 0, 0.28);
+  border-radius: 50%;
+  color: #fff;
+  cursor: pointer;
+  display: none;
+  font-size: 40px;
+  height: 40px;
+  line-height: 35px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+  cursor: pointer;
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  text-align: center;
+  width: 40px;
+  z-index: 10;
+}
+
+.carousel-control.prev {
+  left: 2%;
+}
+
+.carousel-control.next {
+  right: 2%;
+}
+
+.carousel-control:hover {
+  background: rgba(0, 0, 0, 0.8);
+  color: #aaaaaa;
+}
+
+#carousel-1:checked ~ .control-1,
+#carousel-2:checked ~ .control-2,
+#carousel-3:checked ~ .control-3 {
+  display: block;
+}
+
+.carousel-indicators {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  bottom: 2%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 10;
+}
+
+.carousel-indicators li {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.carousel-bullet {
+  color: #fff;
+  cursor: pointer;
+  display: block;
+  font-size: 35px;
+}
+
+.carousel-bullet:hover {
+  color: #aaaaaa;
+}
+
+#carousel-1:checked ~ .control-1 ~ .carousel-indicators li:nth-child(1) .carousel-bullet,
+#carousel-2:checked ~ .control-2 ~ .carousel-indicators li:nth-child(2) .carousel-bullet,
+#carousel-3:checked ~ .control-3 ~ .carousel-indicators li:nth-child(3) .carousel-bullet {
+  color: #428bca;
+}
+
+#title {
+  width: 100%;
+  position: absolute;
+  padding: 0px;
+  margin: 0px auto;
+  text-align: center;
+  font-size: 27px;
+  color: rgba(255, 255, 255, 1);
+  font-family: 'Open Sans', sans-serif;
+  z-index: 9999;
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.33), -1px 0px 2px rgba(255, 255, 255, 0);
+}
+li.glw{
+  text-align: justify;
+  line-height: 25px;
+  font-size: 20px;
+  padding: 10px 0;
+}
+.authformcontainer,.loginform,.registerform{
+  display:flex;
+  flex-direction: column;
+}
+
+label{
+  text-align: left;
+  padding: 0.25rem 0;
+}
+input{
+  margin: 0.5rem 0;
+  padding: 1rem;
+  border: none;
+  border-radius: 10px;
+  height: 50px;
+  width: 400px;
+}
+button{
+  border: none;
+  background-color: #d2e2f7;
+  padding: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  height: 50px;
+  width: 150px;
+  
+}
