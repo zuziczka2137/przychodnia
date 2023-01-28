@@ -43,7 +43,7 @@ class faq extends React.Component{
                 </div>
             </header>
             <nav>
-            <a className="menu active" href="stronaglowna">Strona Główna</a><a className="menu" href="kontakt">Kontakt</a><a className="menu" href="informacje">Informacje</a><a className="menu" href="faq">FAQ</a><a className="menu" href="konto">Konto</a>
+            <a className="menu" href="stronaglowna">Strona Główna</a><a className="menu" href="kontakt">Kontakt</a><a className="menu" href="informacje">Informacje</a><a className="menu active" href="faq">FAQ</a><a className="menu" href="konto">Konto</a>
             </nav>
             <section>               
                 <article>
