@@ -13,11 +13,11 @@ const Rejestracja =()=>{
         createUserWithEmailAndPassword(auth,email,pass)
         .then((useCredential)=>{
             console.log(useCredential);
+            setLoggedIn(prevState =>!prevState);
         })
         .catch((error)=>{
             console.log(error);
         });
-        setLoggedIn(prevState =>!prevState) 
     };
 
         return(
